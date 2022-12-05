@@ -10,3 +10,9 @@
 
 Для КП4-5 файлы:Time.cpp, List.cpp
 
+
+
+
+
+Для КП6 файл:HashTableClass.cpp
+
