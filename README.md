@@ -15,4 +15,6 @@
 
 
 Для КП6 файл:HashTableClass.cpp
+Для КП7 папка:CP7
+
 
