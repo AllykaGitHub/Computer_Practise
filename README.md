@@ -15,6 +15,10 @@
 
 
 Для КП6 файл:HashTableClass.cpp
-Для КП7 папка:CP7
+
+
+
+
+Для КП7 файлы:time.main.cpp
 
 
