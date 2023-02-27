@@ -1,0 +1,58 @@
+a) Решение с помощью Фабричного метода:
+
+Создадим абстрактный класс Creator, который будет содержать фабричный метод и определить интерфейс для создания объектов типа Point:
+
+
+class Creator {
+public:
+    virtual ~Creator() = default;
+    virtual Point createPoint(float x, float y) = 0;
+};
+
+
+Создадим два класса-наследника Creator: CartesianCreator и PolarCreator, которые будут реализовывать фабричный метод:
+
+
+class CartesianCreator : public Creator {
+public:
+    Point createPoint(float x, float y) override {
+        return Point(x, y);
+    }
+};
+
+class PolarCreator : public Creator {
+public:
+    Point createPoint(float r, float phi) override {
+        return Point(r*cos(phi), r*sin(phi));
+    }
+};
+
+
+Теперь мы можем создавать точки, вызывая соответствующий метод создания в классах-наследниках:
+auto cartesian_creator = std::make_unique<CartesianCreator>();
+auto polar_creator = std::make_unique<PolarCreator>();
+
+auto p = polar_creator->createPoint(5, M_PI_4);
+auto my_point = cartesian_creator->createPoint(3, 4);
+
+b) Решение с помощью Простой фабрики:
+
+Создадим класс PointFactory, который будет содержать статические методы для создания объектов типа Point:
+
+class PointFactory {
+public:
+    static Point NewCartesian(float x, float y) {
+        return Point(x, y);
+    }
+
+    static Point NewPolar(float r, float phi) {
+        return Point(r*cos(phi), r*sin(phi));
+    }
+};
+
+
+Теперь мы можем создавать точки, вызывая соответствующие статические методы в PointFactory:
+
+auto p = PointFactory::NewPolar(5, M_PI_4);
+auto my_point = PointFactory::NewCartesian(3, 4);
+
