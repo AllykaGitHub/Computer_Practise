@@ -1,0 +1,5 @@
+"C:\Users\lyaho\DevTools\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/lyaho/DevTools/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S C:\Users\lyaho\CS_Projects\C++\Games\Pacman -B C:\Users\lyaho\CS_Projects\C++\Games\Pacman\cmake-build-debug
+-- Found SFML 2.5.1 in C:/Users/lyaho/CS_Projects/C++/lib/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/cmake/SFML
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/lyaho/CS_Projects/C++/Games/Pacman/cmake-build-debug
