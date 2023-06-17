@@ -12,9 +12,9 @@ add_executable(Pacman main.cpp
         Game.h Game.cpp
         Ghost.h Ghost.cpp
         Pacman.h Pacman.cpp
-        Cell.h AbstractGhostFactory.h Field.h AbstractGhostFactory.cpp Cell.cpp UIPanel.cpp UIPanel.h)
+        Cell.h AbstractGhostFactory.h .idea/Panel.cpp .idea/Panel.h)
 
-set(SFML_DIR "C:/Users/lyaho/CS_Projects/C++/lib/SFML/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.5.1/lib/cmake/SFML")
+set(SFML_DIR "/Users/_fakedimok_/Downloads/pacman-master/SFML-2.5.1/lib/cmake/SFML")
 target_link_libraries(Pacman sfml-graphics)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules ")
 find_package(SFML 2.5.1 REQUIRED graphics network audio system)
